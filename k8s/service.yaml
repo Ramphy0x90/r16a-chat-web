@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: r16a-chat-web
+  namespace: r16a-chat
+spec:
+  type: ClusterIP
+  selector:
+    app: r16a-chat-web
+  ports:
+    - port: 80
+      targetPort: 80
+      protocol: TCP
