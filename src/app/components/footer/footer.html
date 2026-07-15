@@ -1,0 +1,9 @@
+<p class="footer-left">{{ footerRights }}</p>
+
+<div class="footer-links">
+	@for (option of navOptions; track option.path) {
+		<a [routerLink]="option.path" class="nav-option">
+			{{ option.label }}
+		</a>
+	}
+</div>
