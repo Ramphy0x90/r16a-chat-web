@@ -1,0 +1,17 @@
+.light {
+	--zmey-bg: #f7f5f0;
+	--zmey-surface: #ebe8e1;
+	--zmey-text-primary: #1a1512;
+	--zmey-text-secondary: #8c8579;
+	--zmey-accent-maroon: #8a2a2e;
+	--zmey-accent-gold: #d9a441;
+
+	--zmey-color-primary: var(--zmey-accent-gold);
+	--zmey-color-primary-hover: #c4913a;
+	--zmey-color-secondary: var(--zmey-accent-maroon);
+	--zmey-color-secondary-hover: #7a2529;
+	--zmey-color-border: var(--zmey-surface);
+	--zmey-color-border-strong: #d8d3c8;
+	--zmey-color-danger: #b3261e;
+	--zmey-color-disabled: #d3d1c7;
+}

@@ -1,0 +1,12 @@
+.root-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+
+::ng-deep .page {
+	flex: 1;
+	height: auto;
+	padding: var(--space-4) 0;
+}
