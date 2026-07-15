@@ -1,22 +1,35 @@
 :host {
+	position: relative;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
 	background-color: var(--zmey-surface);
 	padding: 0 var(--space-3);
+	z-index: 20;
 }
 
 nav {
-	position: relative;
+	position: static;
 }
 
 .nav-options {
 	position: absolute;
+	top: 100%;
+	left: 0;
 	right: 0;
 	display: flex;
 	flex-direction: column;
-	gap: var(--space-2);
+	gap: var(--space-1);
+	background-color: var(--zmey-surface);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+	padding: var(--space-3);
+	z-index: 15;
+	transform-origin: top;
+	transition:
+		opacity 160ms ease,
+		transform 160ms ease,
+		visibility 160ms;
 }
 
 .nav-options.visible {
@@ -25,17 +38,46 @@ nav {
 
 .nav-options.hidden {
 	visibility: hidden;
+	pointer-events: none;
 }
 
 .nav-option {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	gap: var(--space-1);
+	gap: var(--space-2);
+	padding: var(--space-2);
 }
 
 .nav-option.active {
-	border-bottom: 2px solid var(--zmey-color-primary);
+	color: var(--zmey-color-primary);
+}
+
+.theme-toggle-btn {
+	width: 44px;
+	height: 44px;
+	justify-content: center;
+}
+
+.nav-backdrop {
+	position: fixed;
+	inset: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.35);
+	z-index: 10;
+}
+
+/* This is for the animation of hide / show of menu on mobile */
+@media (max-width: 767px) {
+	.nav-options.visible {
+		opacity: 1;
+		transform: scaleY(1);
+	}
+
+	.nav-options.hidden {
+		opacity: 0;
+		transform: scaleY(0.95);
+	}
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -44,16 +86,33 @@ nav {
 		display: none;
 	}
 
+	.nav-backdrop {
+		display: none;
+	}
+
 	.nav-options {
 		position: inherit;
 		flex-direction: row;
 		font-size: 14px;
 		gap: var(--space-4);
+		background: none;
+		border: none;
+		box-shadow: none;
+		padding: 0;
+		opacity: 1;
+		transform: none;
+		pointer-events: auto;
 	}
 
 	.nav-options.visible,
 	.nav-options.hidden {
 		visibility: visible;
+		pointer-events: auto;
+	}
+
+	.nav-option.active {
+		color: var(--zmey-text-primary);
+		border-bottom: 2px solid var(--zmey-color-primary);
 	}
 
 	.nav-option-icon {

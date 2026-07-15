@@ -7,7 +7,12 @@
 
 	<div class="nav-options" [ngClass]="isMenuOpen ? 'visible' : 'hidden'">
 		@for (option of navOptions; track option.path) {
-			<a [routerLink]="option.path" [routerLinkActive]="'active'" class="nav-option">
+			<a
+				[routerLink]="option.path"
+				[routerLinkActive]="'active'"
+				class="nav-option"
+				(click)="closeMenu()"
+			>
 				<div class="nav-option-icon">
 					<i class="ti" [ngClass]="option.icon"></i>
 				</div>
@@ -23,3 +28,7 @@
 		</button>
 	</div>
 </nav>
+
+@if (isMenuOpen) {
+	<div class="nav-backdrop" (click)="closeMenu()"></div>
+}
