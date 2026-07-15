@@ -1,0 +1,237 @@
+:host {
+	display: flex;
+	flex-direction: column;
+}
+
+.hero {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--space-4);
+	padding: 72px var(--space-5);
+	min-height: var(--min-height-lg);
+}
+
+.hero-headline {
+	flex: 1 1 400px;
+	font-size: clamp(50px, 9vw, 96px);
+	font-weight: var(--font-bold);
+	line-height: 0.95;
+	color: var(--zmey-text-primary);
+	border-left: 5px solid var(--zmey-color-primary);
+	padding-left: var(--space-2);
+}
+
+.hero-aside {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-3);
+	flex: 1 1 380px;
+	font-size: var(--base-font-size);
+	max-width: 480px;
+	padding-top: var(--space-2);
+}
+
+.hero-label {
+	color: var(--zmey-color-primary);
+	font-weight: var(--font-bold);
+	text-transform: uppercase;
+}
+
+.hero-body {
+	color: var(--zmey-text-secondary);
+	line-height: 1.7;
+}
+
+.hero-ctas {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: var(--space-3);
+}
+
+.cta-primary {
+	color: var(--zmey-color-primary);
+	font-weight: var(--font-bold);
+	letter-spacing: 0.5px;
+}
+
+.cta-secondary {
+	color: var(--zmey-text-secondary);
+}
+
+.manifesto {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--zmey-color-primary);
+}
+
+.manifesto-inner {
+	padding: 48px;
+	min-height: var(--min-height-md);
+	color: var(--zmey-color-secondary);
+}
+
+.manifesto-quote {
+	font-size: clamp(45px, 8.5vw, 75px);
+	font-weight: var(--font-bold);
+	line-height: 1;
+	letter-spacing: -1.5px;
+}
+
+.manifesto-sub {
+	font-size: 22px;
+	font-weight: var(--font-bold);
+	letter-spacing: 0.5px;
+	line-height: 1.4;
+}
+
+.manifesto-bottom {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-4);
+	padding: var(--space-5);
+	background-color: var(--zmey-bg);
+}
+
+.manifesto-col {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-2);
+}
+
+.manifesto-col h3 {
+	font-size: 22px;
+	font-weight: var(--font-bold);
+	letter-spacing: -0.5px;
+	color: var(--zmey-text-primary);
+}
+
+.manifesto-col p {
+	font-size: var(--base-font-size);
+	line-height: 1.7;
+	color: var(--zmey-text-secondary);
+}
+
+.architecture {
+	display: flex;
+	flex-direction: column;
+	padding: 64px 0 0;
+}
+
+.arch-header {
+	display: flex;
+	align-items: center;
+	gap: var(--space-3);
+	padding: 0 var(--space-5) var(--space-4);
+}
+
+.arch-title {
+	color: var(--zmey-text-secondary);
+	font-size: var(--base-font-size);
+	font-weight: var(--font-bold);
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+.arch-row {
+	display: flex;
+	flex-wrap: wrap;
+	border-top: 1px solid var(--zmey-color-border-strong);
+}
+
+.arch-row-left {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-2);
+	flex: 1 1 320px;
+	padding: var(--space-4) var(--space-5);
+}
+
+.arch-row-num {
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 48px;
+	font-weight: 300;
+	letter-spacing: -1.5px;
+	color: var(--zmey-color-border-strong);
+}
+
+.arch-row-left h3 {
+	font-size: 26px;
+	font-weight: var(--font-bold);
+	letter-spacing: -0.5px;
+	color: var(--zmey-text-primary);
+}
+
+.arch-row-right {
+	display: flex;
+	align-items: center;
+	flex: 2 1 480px;
+	padding: var(--space-4) var(--space-5);
+	border-left: 1px solid var(--zmey-color-border-strong);
+}
+
+.arch-row-right p {
+	color: var(--zmey-text-secondary);
+	font-size: var(--base-font-size);
+	line-height: 1.7;
+}
+
+.download {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-2);
+	padding: var(--space-5);
+	min-height: var(--min-height-sm);
+	background-color: var(--zmey-surface);
+	border-top: 1px solid var(--zmey-color-border-strong);
+}
+
+.download-headline {
+	margin: var(--space-3) 0 var(--space-2);
+	font-size: 44px;
+	font-weight: var(--font-bold);
+	letter-spacing: -1.5px;
+	color: var(--zmey-text-primary);
+}
+
+.download-note {
+	margin: 0 0 var(--space-3);
+	color: var(--zmey-text-secondary);
+	font-size: 15px;
+	line-height: 1.7;
+}
+
+.download-cta {
+	display: inline-flex;
+	width: fit-content;
+	align-items: center;
+	padding: var(--space-3) var(--space-4);
+	border-radius: var(--radius);
+	background-color: var(--zmey-color-primary);
+	color: var(--zmey-text-primary);
+	font-size: var(--base-font-size);
+	font-weight: var(--font-bold);
+}
+
+.download-tagline {
+	text-align: right;
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 28px;
+	line-height: 1.3;
+	color: var(--zmey-color-primary);
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.manifesto-bottom {
+		flex-direction: row;
+	}
+
+	.manifesto-col {
+		flex: 1;
+	}
+
+	.arch-row {
+		flex-wrap: nowrap;
+	}
+}

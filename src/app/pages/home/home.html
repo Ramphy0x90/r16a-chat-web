@@ -1,1 +1,115 @@
-<p>home works!</p>
+<section class="hero">
+	<div class="gold-line"></div>
+
+	<h1 class="hero-headline">Your<br />messages<br />belong<br />to you.<br />PERIOD</h1>
+
+	<div class="hero-aside">
+		<p class="hero-label">Swiss-made &middot; End-to-end encrypted &middot; Matrix</p>
+
+		<p class="hero-body">
+			Zmey is a self-hosted messaging app built on the Matrix protocol, made in Switzerland outside
+			both US and EU jurisdiction.
+			<br /><br />
+			Built in direct response to the EU's Chat Control legislation and big companies violating our
+			privacy. Not a privacy promise. A privacy architecture.
+		</p>
+
+		<div class="hero-ctas">
+			<a class="cta-primary" [routerLink]="DOWNLOAD_ROUTE">Download &rarr;</a>
+			<a class="cta-secondary" [routerLink]="SEC_PRIVACY_ROUTE">Security & Privacy &rarr;</a>
+		</div>
+	</div>
+</section>
+
+<section class="manifesto">
+	<div class="manifesto-inner">
+		<h2 class="manifesto-quote">The operator cannot<br />read your messages.</h2>
+		<p class="manifesto-sub">Not by policy.<br />By architecture.</p>
+	</div>
+
+	<div class="manifesto-bottom">
+		<div class="manifesto-col">
+			<h3>Not Signal</h3>
+			<p>
+				Signal is a US nonprofit, subject to US law. Its centralized infrastructure is a single
+				point of failure, legal or technical. Zmey places the same cryptographic guarantees in Swiss
+				jurisdiction.
+			</p>
+		</div>
+
+		<div class="manifesto-col">
+			<h3>Not Discord</h3>
+			<p>
+				Not a community platform with a privacy label. Zmey is messaging, direct and group
+				conversations app, with mandatory end-to-end encryption, key verification, and no metadata
+				harvesting. Fewer features, zero compromise.
+			</p>
+		</div>
+
+		<div class="manifesto-col">
+			<h3>Not compliant</h3>
+			<p>
+				The EU's Chat Control regulation demands client-side scanning. Zmey's architecture makes
+				that technically impossible. No backdoor. No scanning. No exceptions.
+			</p>
+		</div>
+	</div>
+</section>
+
+<section class="architecture">
+	<div class="arch-header">
+		<p class="arch-title">How it works</p>
+	</div>
+
+	<div class="arch-row">
+		<div class="arch-row-left">
+			<p class="arch-row-num">01</p>
+			<h3>Matrix protocol</h3>
+		</div>
+
+		<div class="arch-row-right">
+			<p>
+				Open, federated, auditable. Your messages travel through infrastructure you can verify. No
+				proprietary black boxes. No trust required, only math.
+			</p>
+		</div>
+	</div>
+
+	<div class="arch-row">
+		<div class="arch-row-left">
+			<p class="arch-row-num">02</p>
+			<h3>Swiss jurisdiction</h3>
+		</div>
+		<div class="arch-row-right">
+			<p>
+				Hosted in Switzerland. Not subject to the CLOUD Act, not subject to Chat Control, not
+				subject to FISA. Swiss Federal Data Protection Act applies one of the strongest privacy
+				frameworks in the world.
+			</p>
+		</div>
+	</div>
+
+	<div class="arch-row">
+		<div class="arch-row-left">
+			<p class="arch-row-num">03</p>
+			<h3>One operator</h3>
+		</div>
+
+		<div class="arch-row-right">
+			<p>
+				Run by a single person. No board, no investors, no stakeholders with competing interests.
+				Minimal attack surface. The infrastructure is the policy, there is nothing to read, nothing
+				to hand over, nothing to compromise.
+			</p>
+		</div>
+	</div>
+</section>
+
+<section class="download">
+	<h2 class="download-headline">Get Zmey.</h2>
+	<p class="download-note">iOS &middot; Android &middot; Desktop</p>
+
+	<a class="download-cta" [routerLink]="DOWNLOAD_ROUTE">Download</a>
+
+	<p class="download-tagline">Swiss made.<br />One human.<br />Zero compromise.</p>
+</section>

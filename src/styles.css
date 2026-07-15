@@ -3,8 +3,16 @@
 	--space-2: 10px;
 	--space-3: 15px;
 	--space-4: 30px;
+	--space-5: 48px;
 
 	--radius: 8px;
+
+	--min-height-sm: 280px;
+	--min-height-md: 340px;
+	--min-height-lg: 560px;
+
+	--font-bold: 600;
+	--base-font-size: 14px;
 
 	box-sizing: border-box;
 	transition: all 122ms linear;
@@ -34,7 +42,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
 	margin: 0;
 }
 
