@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ROUTES } from '../../app.routes';
+import { ThemeService } from '../../services/theme.service';
 
 @Component({
 	selector: 'logo-btn',
@@ -11,4 +12,6 @@ import { ROUTES } from '../../app.routes';
 })
 export class LogoBtn {
 	readonly HOME_ROUTE = ROUTES.HOME;
+
+	constructor(protected readonly themeService: ThemeService) {}
 }

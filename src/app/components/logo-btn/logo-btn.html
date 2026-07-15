@@ -1,6 +1,6 @@
 <a [routerLink]="HOME_ROUTE">
 	<img
-		[src]="false ? 'assets/imgs/logo-dark.svg' : 'assets/imgs/logo-light.svg'"
+		[src]="themeService.isDarkTheme ? 'assets/imgs/logo-dark.svg' : 'assets/imgs/logo-light.svg'"
 		alt="Zmey"
 		class="navbar-logo"
 	/>

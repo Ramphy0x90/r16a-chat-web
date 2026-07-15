@@ -34,6 +34,10 @@ nav {
 	gap: var(--space-1);
 }
 
+.nav-option.active {
+	border-bottom: 2px solid var(--zmey-color-primary);
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 	.menu-btn {

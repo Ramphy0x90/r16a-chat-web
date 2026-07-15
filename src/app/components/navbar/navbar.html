@@ -17,5 +17,9 @@
 				</div>
 			</a>
 		}
+
+		<button class="theme-toggle-btn" (click)="themeService.toggle()">
+			<i class="ti" [ngClass]="themeService.isDarkTheme ? 'ti-sun' : 'ti-moon'"></i>
+		</button>
 	</div>
 </nav>
