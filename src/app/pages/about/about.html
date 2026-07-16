@@ -1,1 +1,142 @@
-<p>about works!</p>
+<section class="hero">
+	<p class="hero-label">About</p>
+
+	<h1 class="hero-title">Built by one person,<br />for everyone.</h1>
+
+	<div class="gold-rule"></div>
+
+	<p class="hero-desc">
+		Zmey is the work of Ramphy Aquino Nova, a solo engineer building private messaging
+		infrastructure from scratch. No company, no investors, no board. One person, self-hosted
+		hardware, and a refusal to compromise on the architecture that keeps your conversations private.
+	</p>
+
+	<p class="hero-accent">R16a - the personal brand behind the infrastructure.</p>
+</section>
+
+<section class="why">
+	<p class="why-label">Why this exists</p>
+	<h2 class="why-title">Privacy shouldn't depend<br />on legal exemptions.</h2>
+
+	<div class="why-columns">
+		<div class="why-col">
+			<h3>Chat Control</h3>
+			<p>
+				On July 9, 2026, the EU extended its voluntary CSAM-scanning derogation, the legal basis
+				that lets platforms scan your private messages without a court order. The more severe
+				mandatory version, Chat Control 2.0, is still under negotiation. Today's voluntary exemption
+				is tomorrow's legal requirement. We build for the architecture, not the current political
+				weather.
+			</p>
+		</div>
+
+		<div class="why-col">
+			<h3>Why not Signal?</h3>
+			<p>
+				Signal's cryptography is excellent. But the Signal Technology Foundation is a US entity,
+				subject to US legal process. Jurisdiction matters. An European, Swiss-hosted,
+				community-governed alternative isn't redundant. It's a genuinely different trust
+				proposition.
+			</p>
+		</div>
+	</div>
+</section>
+
+<section class="different">
+	<div class="different-header">
+		<p class="different-label">What makes it different</p>
+		<h2 class="different-title">Architecture, not promises.</h2>
+	</div>
+
+	<div class="different-grid">
+		<div class="different-cell">
+			<p class="different-num">01</p>
+			<h3>Self-hosted</h3>
+			<p>
+				Running on personally-owned hardware in Switzerland. No AWS, no GCP, no cloud provider with
+				their own compliance obligations and data access frameworks.
+			</p>
+		</div>
+
+		<div class="different-cell bordered">
+			<p class="different-num">02</p>
+			<h3>Matrix protocol</h3>
+			<p>
+				Built on an open standard with independently audited end-to-end encryption (Olm/Megolm via
+				vodozemac). Not custom homegrown crypto(I was tempted), battle-tested, peer-reviewed
+				cryptography.
+			</p>
+		</div>
+
+		<div class="different-cell">
+			<p class="different-num">03</p>
+			<h3>Zero-knowledge operator</h3>
+			<p>
+				The operator has no technical means to read message content. This is a structural fact of
+				the encryption design, not a policy promise that can be revised.
+			</p>
+		</div>
+
+		<div class="different-cell bordered">
+			<p class="different-num">04</p>
+			<h3>One operator</h3>
+			<p>
+				Run by a single person. No board, no investors, no stakeholders with competing interests.
+				Minimal attack surface. The infrastructure is the policy.
+			</p>
+		</div>
+	</div>
+
+	<div class="different-link">
+		<a [routerLink]="SEC_PRIVACY_ROUTE">Read the full security & privacy details &rarr;</a>
+	</div>
+</section>
+
+<section class="name">
+	<div class="name-left">
+		<p class="name-label">The name</p>
+		<h2 class="name-title">Zmey.</h2>
+		<p class="name-desc">
+			From Bulgarian folklore, a guardian dragon or serpent tied to a specific village or place,
+			protecting it rather than roaming freely. A fitting metaphor for self-hosted infrastructure:
+			it guards what's yours, not everyone's.
+		</p>
+	</div>
+
+	<p class="name-right">&#1079;&#1084;&#1077;&#1081;</p>
+</section>
+
+<section class="source">
+	<p class="source-label">Source</p>
+	<h2 class="source-title">Transparency by default.</h2>
+	<p class="source-desc">
+		The code is public. Not because open-source is a marketing strategy, but because you shouldn't
+		have to trust claims you can't verify.
+	</p>
+
+	<div class="repos">
+		<div class="repo">
+			<h3>r16a-chat</h3>
+			<p>Server infrastructure, the Matrix homeserver, configuration, and deployment.</p>
+			<a href="https://github.com/Ramphy0x90/r16a-chat" target="_blank" rel="noopener"
+				>View source &rarr;</a
+			>
+		</div>
+
+		<div class="repo">
+			<h3>r16a-chat-client</h3>
+			<p>Mobile client, native iOS and Android applications for end-to-end encrypted messaging.</p>
+			<a href="https://github.com/Ramphy0x90/r16a-chat-client" target="_blank" rel="noopener"
+				>View source &rarr;</a
+			>
+		</div>
+
+		<div class="repo">
+			<h3>r16a-chat-web</h3>
+			<p>Web client, browser-based access to Zmey.</p>
+			<a href="https://github.com/Ramphy0x90/r16a-chat-web" target="_blank" rel="noopener"
+				>View source &rarr;</a
+			>
+		</div>
+	</div>
+</section>

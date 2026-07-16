@@ -7,6 +7,21 @@
 
 ::ng-deep .page {
 	flex: 1;
+	display: flex;
+	flex-direction: column;
 	height: auto;
 	padding: var(--space-4) 0;
+}
+
+::ng-deep .page .hero {
+	display: flex;
+	padding: 72px var(--space-5);
+	min-height: var(--min-height-lg);
+}
+
+::ng-deep .page .hero-label {
+	font-size: 12px;
+	letter-spacing: 3px;
+	font-weight: var(--font-bold);
+	text-transform: uppercase;
 }
