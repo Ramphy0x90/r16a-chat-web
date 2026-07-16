@@ -1,13 +1,6 @@
-:host {
-	display: flex;
-	flex-direction: column;
-}
-
 .hero {
-	display: flex;
 	flex-wrap: wrap;
 	gap: var(--space-4);
-	padding: 72px var(--space-5);
 	min-height: var(--min-height-lg);
 }
 
@@ -38,8 +31,6 @@
 
 .hero-label {
 	color: var(--zmey-color-primary);
-	font-weight: var(--font-bold);
-	text-transform: uppercase;
 }
 
 .hero-body {

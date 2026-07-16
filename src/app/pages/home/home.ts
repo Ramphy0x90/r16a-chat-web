@@ -10,6 +10,6 @@ import { ROUTES } from '../../app.routes';
 	host: { class: 'page' },
 })
 export class Home {
-	readonly SEC_PRIVACY_ROUTE = ROUTES.SEC_PRIVACY;
+	readonly ABOUT_ROUTE = ROUTES.ABOUT;
 	readonly DOWNLOAD_ROUTE = ROUTES.DOWNLOAD;
 }
