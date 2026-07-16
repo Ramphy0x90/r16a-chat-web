@@ -12,7 +12,7 @@ import { CodeRepos } from '../../components/code-repos/code-repos';
 	host: { class: 'page' },
 })
 export class About {
-	readonly SEC_PRIVACY_ROUTE = ROUTES.SEC_PRIVACY;
+	readonly SEC_PRIVACY_ROUTE = `/${ROUTES.SEC_PRIVACY}`;
 
 	constructor(
 		private titleService: Title,

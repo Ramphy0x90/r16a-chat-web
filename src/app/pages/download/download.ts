@@ -11,8 +11,8 @@ import { ROUTES } from '../../app.routes';
 	host: { class: 'page' },
 })
 export class Download {
-	readonly SEC_PRIVACY_ROUTE = ROUTES.SEC_PRIVACY;
-	readonly ABOUT_ROUTE = ROUTES.ABOUT;
+	readonly SEC_PRIVACY_ROUTE = `/${ROUTES.SEC_PRIVACY}`;
+	readonly ABOUT_ROUTE = `/${ROUTES.ABOUT}`;
 
 	constructor(
 		private titleService: Title,
@@ -36,7 +36,7 @@ export class Download {
 		this.meta.updateTag({
 			property: 'og:description',
 			content:
-				"Not yet. But real. The homeserver is live, the client is in development. iOS, Android, and desktop, built together.",
+				'Not yet. But real. The homeserver is live, the client is in development. iOS, Android, and desktop, built together.',
 		});
 
 		this.meta.updateTag({

@@ -10,6 +10,6 @@ import { ROUTES } from '../../app.routes';
 	host: { class: 'page' },
 })
 export class Home {
-	readonly ABOUT_ROUTE = ROUTES.ABOUT;
-	readonly DOWNLOAD_ROUTE = ROUTES.DOWNLOAD;
+	readonly ABOUT_ROUTE = `/${ROUTES.ABOUT}`;
+	readonly DOWNLOAD_ROUTE = `/${ROUTES.DOWNLOAD}`;
 }
