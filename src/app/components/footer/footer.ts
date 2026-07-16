@@ -15,6 +15,6 @@ export class Footer {
 
 	get footerRights(): string {
 		const year = new Date().getFullYear();
-		return `© ${year} R16a (Ramphy Aquino Nova). With ♥ but also a bit of hate.`;
+		return `© ${year} R16a (Ramphy Aquino Nova).<br />With ♥ but also a bit of hate.`;
 	}
 }

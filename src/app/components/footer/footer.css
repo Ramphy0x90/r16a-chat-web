@@ -1,5 +1,6 @@
 :host {
 	display: flex;
+	flex-direction: column;
 	flex-wrap: wrap;
 	gap: var(--space-2);
 	font-size: 11px;
@@ -12,13 +13,30 @@
 
 .footer-left {
 	color: var(--zmey-color-primary);
+	text-align: center;
 }
 
 .footer-links {
+	flex: 1;
 	display: flex;
+	flex-direction: column;
 	gap: var(--space-4);
+	align-items: center;
 }
 
 .footer-links a {
 	color: var(--zmey-text-secondary);
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	:host {
+		flex-direction: row;
+	}
+
+	.footer-links {
+		flex: 1;
+		flex-direction: row;
+		justify-content: end;
+	}
 }
