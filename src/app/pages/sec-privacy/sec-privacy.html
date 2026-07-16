@@ -1,1 +1,160 @@
-<p>sec-privacy works!</p>
+<section class="hero">
+	<p class="hero-label">Security & Privacy</p>
+
+	<h1 class="hero-title">What we protect,<br />what we can't, and why.</h1>
+
+	<div class="gold-rule"></div>
+
+	<p class="hero-desc">
+		Every messaging app claims encryption. This page explains exactly what that means here, and,
+		just as importantly, what it doesn't.
+	</p>
+</section>
+
+<section class="row">
+	<div class="row-left">
+		<p class="row-num">01</p>
+		<h2>What's encrypted.</h2>
+	</div>
+
+	<div class="row-right">
+		<p>
+			All message content is encrypted by default, on your device, before it ever reaches the
+			server. This uses the Matrix protocol's encryption, Olm for one-to-one conversations, Megolm
+			for group chats, the same double-ratchet cryptographic family that Signal uses.
+		</p>
+
+		<p>
+			This is not a custom or homegrown system. The implementation is vodozemac, independently
+			audited by Least Authority, with the full audit report published publicly. We chose to build
+			on years of reviewed cryptographic work rather than invent our own.
+		</p>
+
+		<div class="highlight">
+			<p>
+				The server never receives readable message content. This is a structural property of the
+				encryption, not a policy decision.
+			</p>
+		</div>
+	</div>
+</section>
+
+<section class="row">
+	<div class="row-left">
+		<p class="row-num">02</p>
+		<h2>What the operator<br />can see.</h2>
+	</div>
+
+	<div class="row-right">
+		<p>
+			Honesty requires stating both sides. Here's the full picture, what is structurally impossible
+			for the operator to access, and what is visible by necessity.
+		</p>
+
+		<div class="visibility-cols">
+			<div class="visibility-col">
+				<p class="visibility-label">Cannot see</p>
+				<p>
+					Message content, ever. The server never receives plaintext. This isn't a policy; it's a
+					structural property of the encryption.
+				</p>
+			</div>
+
+			<div class="visibility-col">
+				<p class="visibility-label">Can see</p>
+				<p>
+					Account existence, connection timing, IP addresses at connection time, and who is
+					messaging whom (metadata). This is the same limitation every messaging system has,
+					including Signal. We don't claim anonymity, this isn't Tor.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="row">
+	<div class="row-left">
+		<p class="row-num">03</p>
+		<h2>Why Matrix, not<br />a custom protocol.</h2>
+	</div>
+
+	<div class="row-right">
+		<p>
+			Was hard but rejected building a custom encrypted messaging protocol. A solo developer
+			designing novel cryptography was a bit hard and didn't have mmuch time. Instead, we adopted
+			Matrix, an open standard backed by years of protocol design, multiple independent
+			implementations, and formal security review.
+		</p>
+
+		<p>
+			The encryption layer (vodozemac) has been audited by Least Authority, a respected independent
+			security firm, with the full report published. This is how responsible security engineering
+			works: you build on proven, reviewed work, you don't reinvent it to seem impressive.
+		</p>
+
+		<div class="highlight">
+			<p>Reusing audited cryptography is the responsible choice, not a shortcut ¯\_(ツ)_/¯</p>
+		</div>
+	</div>
+</section>
+
+<section class="row">
+	<div class="row-left">
+		<p class="row-num">04</p>
+		<h2>Where this runs.</h2>
+	</div>
+
+	<div class="row-right">
+		<p>
+			Self-hosted on personally owned hardware in Switzerland. Not rented from a cloud provider, not
+			managed by a third-party host. Swiss data protection law (nFADP) applies, one of the stronger
+			privacy frameworks in Europe.
+		</p>
+
+		<p>
+			But this needs to be stated plainly: Swiss hosting is one layer of protection, not a magic
+			exemption. If Zmey serves EU-based users, the EU's Chat Control regulation targets the
+			provider regardless of where the server sits. We don't oversell jurisdiction as a legal
+			shield, we treat it as what it is: one factor among several, meaningful but not absolute.
+		</p>
+
+		<div class="highlight">
+			<p>
+				The real protection isn't the jurisdiction, it's the architecture. Even under compulsion,
+				there is no readable content to hand over.
+			</p>
+		</div>
+	</div>
+</section>
+
+<section class="row">
+	<div class="row-left">
+		<p class="row-num">05</p>
+		<h2>You don't have to<br />take our word for it.</h2>
+	</div>
+
+	<div class="row-right">
+		<p>
+			All three repositories are public. The client is licensed AGPLv3 specifically, meaning anyone
+			can inspect what the app actually does, and anyone running a modified or hosted version is
+			legally obligated to share their changes. This isn't transparency theater, it's an enforceable
+			guarantee.
+		</p>
+
+		<app-code-repos />
+	</div>
+</section>
+
+<section class="links-out">
+	<div class="link-col">
+		<h3>Warrant Canary</h3>
+		<p>Regularly updated statement confirming no government data requests have been received.</p>
+		<a [routerLink]="WARRANT_CANARY_ROUTE">View canary &rarr;</a>
+	</div>
+
+	<div class="link-col bordered">
+		<h3>security.txt</h3>
+		<p>Vulnerability disclosure policy following the proposed IETF standard (RFC 9116).</p>
+		<a href="/.well-known/security.txt" target="_blank" rel="noopener">View policy &rarr;</a>
+	</div>
+</section>

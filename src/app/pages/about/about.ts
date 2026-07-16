@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ROUTES } from '../../app.routes';
 import { Meta, Title } from '@angular/platform-browser';
+import { CodeRepos } from '../../components/code-repos/code-repos';
 
 @Component({
 	selector: 'app-about',
-	imports: [RouterLink],
+	imports: [RouterLink, CodeRepos],
 	templateUrl: './about.html',
 	styleUrl: './about.css',
 	host: { class: 'page' },

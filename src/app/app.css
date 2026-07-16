@@ -25,3 +25,9 @@
 	font-weight: var(--font-bold);
 	text-transform: uppercase;
 }
+
+::ng-deep .page .gold-rule {
+	width: 64px;
+	height: 3px;
+	background-color: var(--zmey-color-primary);
+}
