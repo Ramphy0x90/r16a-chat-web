@@ -21,6 +21,11 @@
 	padding-left: var(--space-2);
 }
 
+.hero-headline .period {
+	font-style: italic;
+	color: var(--zmey-color-primary);
+}
+
 .hero-aside {
 	display: flex;
 	flex-direction: column;
