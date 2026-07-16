@@ -1,1 +1,128 @@
-<p>download works!</p>
+<section class="hero">
+	<p class="hero-label">Download</p>
+
+	<h1 class="hero-title">Not yet.<br />But real.</h1>
+
+	<div class="gold-rule"></div>
+
+	<p class="hero-desc">
+		Zmey isn't downloadable yet. The apps are being built. Rather than a vague "coming soon," here's
+		exactly where things stand.
+	</p>
+</section>
+
+<section class="row">
+	<div class="row-left">
+		<p class="row-num">01</p>
+		<h2>What exists<br />right now.</h2>
+	</div>
+
+	<div class="row-right">
+		<p>
+			The homeserver is live and running at zmey.chat. The infrastructure, client, and web
+			repositories are all public. The encryption stack is integrated, the protocol works, the
+			server accepts connections.
+		</p>
+
+		<p>
+			What's left is the client, the app you'd actually install on your phone or desktop. That's
+			what's being built now.
+		</p>
+
+		<div class="status-items">
+			<div class="status-item">
+				<span class="status-tag">live</span>
+				<span class="status-name">zmey.chat homeserver</span>
+			</div>
+
+			<div class="status-item">
+				<span class="status-tag">public</span>
+				<span class="status-name">r16a-chat. Server infrastructure</span>
+			</div>
+
+			<div class="status-item">
+				<span class="status-tag">public</span>
+				<span class="status-name">r16a-chat-client. Mobile app (in development)</span>
+			</div>
+
+			<div class="status-item">
+				<span class="status-tag">public</span>
+				<span class="status-name">r16a-chat-web. Web client (in development)</span>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="row">
+	<div class="row-left">
+		<p class="row-num">02</p>
+		<h2>Planned platforms.</h2>
+	</div>
+
+	<div class="row-right">
+		<p>
+			iOS, Android, and desktop (Linux, macOS, Windows). Built from a single Flutter codebase, so
+			all platforms ship together rather than staggered. No date commitment, but the plan is
+			simultaneous release across all of them.
+		</p>
+
+		<div class="platform-cards">
+			<div class="platform-card">
+				<p class="platform-name">iOS</p>
+				<p class="platform-sub">iPhone &middot; iPad</p>
+			</div>
+
+			<div class="platform-card">
+				<p class="platform-name">Android</p>
+				<p class="platform-sub">Phone &middot; Tablet</p>
+			</div>
+
+			<div class="platform-card">
+				<p class="platform-name">Desktop</p>
+				<p class="platform-sub">Linux &middot; macOS &middot; Windows</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="row">
+	<div class="row-left">
+		<p class="row-num">03</p>
+		<h2>Follow the build.</h2>
+	</div>
+
+	<div class="row-right">
+		<p>
+			The simplest way to track progress is to watch the GitHub repositories. You'll get
+			notifications when code ships, no mailing list, no newsletter, no spam. Just commits.
+		</p>
+
+		<a
+			class="stay-link"
+			href="https://github.com/Ramphy0x90/r16a-chat-client"
+			target="_blank"
+			rel="noopener"
+			>Watch r16a-chat-client on GitHub &rarr;</a
+		>
+	</div>
+</section>
+
+<section class="meantime">
+	<div class="meantime-card">
+		<h3>Security &amp; Privacy</h3>
+		<p>
+			What's encrypted, what the operator can see, and why the architecture matters more than the
+			jurisdiction.
+		</p>
+		<a [routerLink]="SEC_PRIVACY_ROUTE">Read more &rarr;</a>
+	</div>
+
+	<div class="meantime-card">
+		<h3>About</h3>
+		<p>
+			Who's building this, why it exists, and what a one-person messaging project actually looks
+			like.
+		</p>
+		<a [routerLink]="ABOUT_ROUTE">Read more &rarr;</a>
+	</div>
+</section>
