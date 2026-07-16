@@ -1,0 +1,5 @@
+Contact: mailto:ramphy_an@outlook.com
+Expires: 2027-01-15T00:00:00.000Z
+Preferred-Languages: en, de, fr, it, es
+Canonical: https://zmey.chat/.well-known/security.txt
+Policy: https://zmey.chat/security-privacy
