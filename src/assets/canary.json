@@ -1,0 +1,11 @@
+{
+	"lastUpdated": "2026-07-15",
+	"cadence": "monthly",
+	"staleAfterDays": 45,
+	"statement": [
+		"Zmey has never received a National Security Letter, gag order, or any other legal demand that would prohibit us from disclosing its existence.",
+		"Zmey has never been compelled to backdoor, weaken, or add surveillance capability to its encryption.",
+		"Zmey has never been compelled to hand over private keys or user message content — and has no technical ability to do so regardless, by design.",
+		"Zmey has never turned over user data to a government agency, under compulsion or voluntarily, beyond what Swiss law requires for legitimate account administration."
+	]
+}

@@ -1,0 +1,132 @@
+.hero {
+	flex-direction: column;
+	align-items: center;
+	gap: var(--space-3);
+	min-height: var(--min-height-md);
+	text-align: center;
+}
+
+.hero-label {
+	color: var(--zmey-text-secondary);
+}
+
+.hero-title {
+	font-size: clamp(36px, 7vw, 60px);
+	font-weight: var(--font-bold);
+	letter-spacing: -1.5px;
+	color: var(--zmey-text-primary);
+}
+
+.explainer {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-3);
+	padding: 0 var(--space-5) 48px;
+	text-align: center;
+}
+
+.explainer p {
+	color: var(--zmey-text-secondary);
+	font-size: var(--base-font-size);
+	line-height: 1.8;
+}
+
+.explainer p.muted {
+	font-size: var(--base-font-size);
+	opacity: 0.7;
+}
+
+.statement {
+	display: flex;
+	justify-content: center;
+	padding: 0 var(--space-5) 48px;
+}
+
+.statement-box {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-4);
+	width: 100%;
+	padding: var(--space-4);
+	border: 1px solid var(--zmey-color-primary);
+}
+
+.statement-box.stale {
+	border-color: var(--zmey-color-danger);
+}
+
+.statement-header {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-1);
+}
+
+.statement-date {
+	color: var(--zmey-text-primary);
+	font-size: var(--base-font-size);
+	font-weight: var(--font-bold);
+}
+
+.statement-cadence {
+	color: var(--zmey-text-secondary);
+	font-size: var(--base-font-size);
+}
+
+.statement-divider {
+	height: 1px;
+	background-color: var(--zmey-color-border-strong);
+}
+
+.statement-body {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-3);
+}
+
+.statement-body p {
+	color: var(--zmey-text-primary);
+	font-size: var(--base-font-size);
+	line-height: 1.8;
+}
+
+.statement-note {
+	color: var(--zmey-color-primary);
+	font-size: var(--base-font-size);
+	font-weight: var(--font-bold);
+	line-height: 1.7;
+}
+
+.close {
+	display: flex;
+	justify-content: center;
+	padding: 0 var(--space-5) 64px;
+	text-align: center;
+}
+
+.close p {
+	color: var(--zmey-text-secondary);
+	font-size: var(--base-font-size);
+	line-height: 1.7;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.explainer,
+	.statement {
+		padding: 0 120px 64px;
+	}
+
+	.statement-box {
+		padding: var(--space-5);
+	}
+
+	.statement-header {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.close {
+		padding: 0 120px 80px;
+	}
+}

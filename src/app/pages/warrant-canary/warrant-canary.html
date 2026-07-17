@@ -1,1 +1,52 @@
-<p>warrant-canary works!</p>
+<section class="hero">
+	<p class="hero-label">Warrant Canary</p>
+
+	<h1 class="hero-title">Canary statement.</h1>
+
+	<div class="gold-rule"></div>
+</section>
+
+<section class="explainer">
+	<p>
+		A warrant canary is a periodic statement that's true only as long as it keeps being published on
+		schedule. Some legal processes such as US National Security Letters, come bundled with a gag
+		order: the recipient cannot disclose that the request was made. The only signal available is
+		absence, the canary simply stops updating.
+	</p>
+
+	<p class="muted">
+		This mechanism has not been definitively tested in court. It is a meaningful signal, not a legal
+		guarantee.
+	</p>
+</section>
+
+<section class="statement">
+	<div class="statement-box" [class.stale]="isStale">
+		<div class="statement-header">
+			<p class="statement-date">Last updated: {{ canary.lastUpdated | date: 'dd MMMM yyyy' }}</p>
+			<p class="statement-cadence">Updated {{ canary.cadence }}</p>
+		</div>
+
+		<div class="statement-divider"></div>
+
+		<div class="statement-body">
+			@for (item of canary.statement; track item) {
+				<p>{{ item }}</p>
+			}
+		</div>
+
+		<div class="statement-divider"></div>
+
+		<p class="statement-note">
+			If this statement is more than {{ canary.staleAfterDays }} days old, or this page disappears,
+			treat that as significant.
+		</p>
+	</div>
+</section>
+
+<section class="close">
+	<p>
+		This canary will stop updating, without further explanation, if any of the above ceases to be
+		true.
+	</p>
+</section>
